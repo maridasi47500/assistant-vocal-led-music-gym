@@ -1,0 +1,874 @@
+metadata:
+  name: seance hula hoop
+  description: Seance guidee avec tours progressifs, la lampe, musique rythmee et
+    encouragements
+automations:
+  starters:
+  - type: assistant.event.OkGoogle
+    eventData: query
+    is: demarrer seance hula hoop
+  actions:
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Bienvenue dans ta seance hula hoop
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: joue playlist hulahoop Rythme sur spotify
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode arc en ciel
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 3 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Continue comme ca
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 3 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Bravo tu progresses
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 3 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Encore un tour
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 4 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 4 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 4 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu maitrises le mouvement
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 5 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Encore un tour
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 5 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 5 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu assures
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu assures
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 6 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 6 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu tiens le rythme
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 7 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Bravo tu progresses
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 7 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu maitrises le mouvement
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 7 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu geres
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 8 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 8 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu es dans la danse
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 8 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 9 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 9 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 9 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi C est ton moment
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 10 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Garde le rythme
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 10 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 11 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu assures
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 11
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 11 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Bravo tu progresses
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 11
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 11 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 11
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 12 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu tiens le rythme
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 12
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 12 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 12
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 12 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 12
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 13 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu maitrises le mouvement
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 13
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 13 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu maitrises le mouvement
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 13
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 13 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Continue comme ca
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 13
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Encore un tour
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 14 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu es dans la danse
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 14 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 15 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu assures
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 15
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 15 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu tiens le rythme
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 15
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 15 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu es dans la danse
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 15
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 16 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Ne lache rien
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 16
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 16 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu assures
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 16
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 16 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu maitrises le mouvement
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 16
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 17 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Garde le rythme
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 17
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 17 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 17
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 17 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Encore un tour
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 17
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu es au top
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 18 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 18 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 19 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Encore un tour
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 19
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 19 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 19
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 19 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tu peux le faire
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 19
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite pour 20 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Respire et continue
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 20
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers gauche pour 20 tours meme si c est plus
+      difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Plus vite si tu peux
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 20
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers droite ou a gauche pour 20 tours meme si
+      c est plus difficile a gauche, tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Belle rotation
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 20
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Seance terminee bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: arrete la musique
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: eteins la lampe
+    devices: Jardin de devant - Jardin de devant

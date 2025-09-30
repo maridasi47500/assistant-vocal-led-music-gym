@@ -1,0 +1,96 @@
+metadata:
+  name: hula hoop session
+  description: Guided hula hoop session with counts and directions
+automations:
+  starters:
+  - type: assistant.event.OkGoogle
+    eventData: query
+    is: start hula hoop session
+  actions:
+  - type: assistant.command.OkGoogle
+    okGoogle: say Welcome to your hula hoop session
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the right for 3 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the left for 3 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the both sides for 3 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the right for 4 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the left for 4 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the both sides for 4 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the right for 5 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the left for 5 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Turn to the both sides for 5 turns
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: count from 1 to 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: wait 10 seconds
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: say Session complete Good job
+    devices: Jardin de devant - Jardin de devant

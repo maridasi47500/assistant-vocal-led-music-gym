@@ -1,0 +1,123 @@
+metadata:
+  name: hula hoop dynamique
+  description: Séance avec direction, tours progressifs et durée personnalisée.
+automations:
+  starters:
+  - type: assistant.event.OkGoogle
+    eventData: query
+    is: lance séance hula hoop dynamique
+  actions:
+  - type: assistant.command.Broadcast
+    message: Bienvenue à ta séance de hula hoop personnalisée !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers droite… 3 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers gauche… 3 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers les deux côtés… 3 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 3
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers droite… 4 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers gauche… 4 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers les deux côtés… 4 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 4
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers droite… 5 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers gauche… 5 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers les deux côtés… 5 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 5
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers droite… 6 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers gauche… 6 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Prépare-toi à tourner vers les deux côtés… 6 tours !
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compte de 1 à 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attends 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.Broadcast
+    message: Bravo ! Tu as atteint le maximum de tours 💫
+    devices: Jardin de devant - Jardin de devant
