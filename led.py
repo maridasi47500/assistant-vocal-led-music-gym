@@ -52,7 +52,7 @@ seance["automations"]["actions"].extend([
 ])
 
 # Instructions et motivation
-for tours in range(3, nombre_max_tours + 1):
+for tours in range(3, nombre_max_tours + 1, 2):
     for direction in directions:
         message_direction = f"Tourne vers {direction} pour {tours} tours"
         if "gauche" in direction:
