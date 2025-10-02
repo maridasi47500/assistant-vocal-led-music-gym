@@ -1,7 +1,7 @@
 theme: zen_fluidite
 params:
   nom: "Zen et Fluidit\xE9"
-  musique: https://example.com/chill_playlist.mp3
+  musique: https://stunnel1.cyber-streaming.com:9162/stream?
   lumiere: bleu doux
   directions:
   - gauche

@@ -1,8 +1,37 @@
 import yaml
+from lumiere_controller import run_lumiere
+import multiprocessing
+
+import time
 from gtts import gTTS
 import random
 import flux_led
 import pychromecast
+import asyncio
+import websockets
+import threading
+
+async def envoyer_lumiere(style):
+    uri = "ws://192.168.1.18:8765"  # IP du serveur WebSocket
+    async with websockets.connect(uri) as websocket:
+        await websocket.send(style)
+
+
+def envoyer_lumiere_thread(style):
+    def run():
+        asyncio.run(envoyer_lumiere(style))
+    threading.Thread(target=run).start()
+def generer_message_vocal(tours, direction, motivations):
+    texte = f"\n {tours} tours vers {direction}, "
+    if "gauche" in direction:
+        #texte += " Même si c’est plus difficile à gauche, tu peux y arriver, "
+        texte += " tu peux y arriver, "
+    texte += f" {random.choice(motivations)}, "
+    texte += ", ".join(str(n) for n in range(1, tours + 1)) + ","
+    return texte
+
+
+
 
 # Initialisation Chromecast
 chromecasts, browser = pychromecast.get_chromecasts()
@@ -13,15 +42,66 @@ if cast is None:
 
 cast.wait()
 mc = cast.media_controller
+mcradio = cast.media_controller
+#mcradio.play_media(url, 'audio/mp3', stream_type='LIVE')
+#mcradio.block_until_active()
+
 
 # Initialisation LED
 led = flux_led.WifiLedBulb("192.168.1.12")  # IP de l’ampoule LED
+def wait_until_seconds(media_controller, seconds):
+    """
+    Attend que le média soit en lecture pendant un nombre de secondes donné.
+    """
+    x = 0
+    mytime = 0.5
+
+    while True:
+        media_controller.update_status()
+        state = media_controller.status.player_state
+        print("🎧 État du média :", state)
+
+        if state == "PAUSED":
+            print("⏹️ Média déjà en pause.")
+            break
+
+        if state == "IDLE":
+            print("⏹️ Média arrêté prématurément.")
+            break
+
+        if state == "PLAYING":
+            x += mytime
+            if x >= seconds:
+                print("⏳ Durée écoulée, mise en pause.")
+                media_controller.pause()
+                break
+
+        time.sleep(mytime)
+
+
+
+def wait_until_media_finished(media_controller):
+    """
+    Wait until the current media finishes playing.
+    """
+    while True:
+        # Update the media controller status
+        media_controller.update_status()
+        # Check if the media is idle (finished playing)
+        print("etat du media", media_controller.status.player_state)
+        time.sleep(0.5)
+        # Wait a short time before checking again
+        if media_controller.status.player_state == "IDLE":
+            print("media termine")
+            break
+
+
 
 # Menu des séances
 menu_seances = {
     "zen_fluidite": {
         "nom": "Zen et Fluidité",
-        "musique": "https://example.com/chill_playlist.mp3",
+        "musique": "https://stunnel1.cyber-streaming.com:9162/stream?",
         "lumiere": "bleu doux",
         "directions": ["gauche"],
         "motivations": [
@@ -33,7 +113,7 @@ menu_seances = {
     },
     "challenge_express": {
         "nom": "Challenge Express",
-        "musique": "https://example.com/cardio_boost.mp3",
+        "musique": "https://stunnel1.cyber-streaming.com:9162/stream",
         "lumiere": "flash intense",
         "directions": ["droite", "gauche"],
         "motivations": [
@@ -57,6 +137,7 @@ menu_seances = {
     }
 }
 
+
 def effet_lumiere(style):
     if style == "bleu doux":
         led.setRgb(0, 0, 255)
@@ -70,8 +151,21 @@ def effet_lumiere(style):
             led.turnOn()
             led.setRgb(255, 255, 0)
             led.turnOff()
+def jouer_une_musique(mc, url, media_loaded=False):
+    if not media_loaded:
+        print("Chargement du média...")
+        mc.play_media(url, 'audio/mp3', stream_type='LIVE')
+        mc.block_until_active()
+
+        media_loaded = True
+    print("Lecture...")
+
+    mc.play()
+    return mc
+
 
 def jouer_musique(url):
+    print("musique------")
     mc.play_media(url, 'audio/mp3')
     mc.block_until_active()
     mc.play()
@@ -82,36 +176,62 @@ def arreter_musique():
 # Fonction principale
 def generer_seance_yaml(theme):
     params = menu_seances[theme]
-
+   
+    #dire(f"bienvenue à {params['nom']}")
     print(f"\n🎵 Lecture de la musique : {params['musique']}")
-    jouer_musique(params["musique"])
+    url=params["musique"]
+    #mcradio.play_media(params['musique'], 'audio/mp3')
+
+
 
     print(f"💡 Effet lumière : {params['lumiere']}")
-    effet_lumiere(params["lumiere"])
+    #asyncio.run(envoyer_lumiere(params["lumiere"]))
+    envoyer_lumiere_thread(params["lumiere"])
+
 
     for tours in range(3, params["nombre_max_tours"] + 1, params["pas_tours"]):
+        envoyer_lumiere_thread("flash intense")
+
+        print("before state of radio is :  "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+        if mcradio.status.player_state == "IDLE":
+            mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
+            mcradio.block_until_active()
+            mcradio.play()
+            wait_until_seconds(mcradio,int(params['duree_phase']))
+            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+        elif mcradio.status.player_state == "PAUSED":
+            print("hey")
+            mcradio.play()
+            wait_until_seconds(mcradio,int(params['duree_phase']))
+            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+        else:
+            mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
+            mcradio.block_until_active()
+            mcradio.play()
+            wait_until_seconds(mcradio,int(params['duree_phase']))
+            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+
+        #mcradio.pause()
+
         for direction in params["directions"]:
             mytext=""
             print(f"\n➡️ {tours} tours vers {direction}")
-            mytext+=(f"\n {tours} tours vers {direction}, ")
-            if "gauche" in direction:
-                print("💬 Même si c’est plus difficile à gauche, tu peux y arriver")
-                mytext+=(" Même si c’est plus difficile à gauche, tu peux y arriver, ")
-            print(f"💬 Motivation : {random.choice(params['motivations'])}")
-            mytext+=(f" Motivation : {random.choice(params['motivations'])}, ")
-            print(f" Attente de {params['duree_phase']} secondes")
-            mytext+=(f" Attente de {params['duree_phase']} secondes,")
+            mytext = generer_message_vocal(tours, direction, params['motivations'])
 # Génération du message vocal
             tts = gTTS(mytext, lang='fr')
             tts.save("message.mp3")
-            
             # Diffusion du message
             mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
             mc.block_until_active()
             mc.play()
+            wait_until_media_finished(mc)
+            time.sleep(0.5)
 
 
-            effet_lumiere("flash intense")
+
+
+
+
 
     msgfin=("\n🏁 Séance terminée ! Bravo 👏")
     print(msgfin)
@@ -122,8 +242,10 @@ def generer_seance_yaml(theme):
     mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
     mc.block_until_active()
     mc.play()
+
     arreter_musique()
     led.turnOff()
+
 
     # YAML export
     nom_fichier = f"seance_hula_hoop_{theme}.yaml"
@@ -133,6 +255,8 @@ def generer_seance_yaml(theme):
 
 # Exemple d'utilisation
 if __name__ == "__main__":
+
+
     print("Choisis ton theme :")
     for key, val in menu_seances.items():
         print(f"- {key} : {val['nom']}")

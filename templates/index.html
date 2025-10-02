@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Choix de la Séance</title>
+</head>
+<body>
+    <h1>🎯 Lance ta séance Hula Hoop</h1>
+    <form method="post">
+        <label for="theme">Choisis ton thème :</label>
+        <select name="theme" id="theme">
+            {% for key, val in menu.items() %}
+                <option value="{{ key }}">{{ val.nom }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Lancer</button>
+    </form>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>
+
