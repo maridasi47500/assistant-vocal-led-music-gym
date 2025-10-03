@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Formulaire Séance</title></head>
+<body>
+<h1>{{ 'Modifier' if seance else 'Ajouter' }} une séance</h1>
+<form method="post" action="{{ url_for('save') }}">
+  {% if seance %}<input type="hidden" name="id" value="{{ seance[0] }}">{% endif %}
+  <label>Thème: <input name="theme" value="{{ seance[1] if seance else '' }}"></label><br>
+  <label>Nom: <input name="nom" value="{{ seance[2] if seance else '' }}"></label><br>
+  <label>Musique: <input name="musique" value="{{ seance[3] if seance else '' }}"></label><br>
+  <label>Lumière: <input name="lumiere" value="{{ seance[4] if seance else '' }}"></label><br>
+  <label>Directions (like ["1", "2nd direction"]): <input name="directions" value="{{ seance[5] if seance else '[]' }}"></label><br>
+  <label>Motivations (like ["1", "2nd motivation"]): <input name="motivations" value="{{ seance[6] if seance else '[]' }}"></label><br>
+  <label>Max tours: <input name="nombre_max_tours" type="number" value="{{ seance[7] if seance else 20 }}"></label><br>
+  <label>Durée phase: <input name="duree_phase" type="number" value="{{ seance[8] if seance else 10 }}"></label><br>
+  <label>Pas tours: <input name="pas_tours" type="number" value="{{ seance[9] if seance else 2 }}"></label><br>
+  <label>Répétitions: <input name="repetitions" type="number" value="{{ seance[10] if seance else 2 }}"></label><br>
+  <label>nombre minimum  de tours: <input name="repetitions" type="number" min="2" value="{{ seance[11] if seance else 2 }}"></label><br>
+  <button type="submit">💾 Sauvegarder</button>
+</form>
+</body>
+</html>
+

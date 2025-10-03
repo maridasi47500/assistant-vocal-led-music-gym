@@ -19,6 +19,17 @@
     {% if message %}
         <p><strong>{{ message }}</strong></p>
     {% endif %}
+<h1>📋 Séances enregistrées</h1>
+<a href="{{ url_for('new') }}">➕ Ajouter une séance</a>
+<ul>
+  {% for s in seances %}
+    <li>
+      <strong>{{ seances[s]['nom'] }}</strong> — {{ seances[s]['lumiere'] }}
+      <a href="{{ url_for('edit', seance_id=seances[s]['id']) }}">✏️ Modifier</a>
+    </li>
+  {% endfor %}
+</ul>
+
 </body>
 </html>
 

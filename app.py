@@ -1,10 +1,41 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
+from dbseances import init_db, get_all_seances, get_seance_by_id, save_seance
+import json
 from led_nest_mini_python import generer_seance_yaml, menu_seances  # Ton script renommé en module
+import json
+
+def charger_seances_depuis_db():
+    rows = get_all_seances()
+    seances = {}
+    for row in rows:
+        theme = row[1]
+        seances[theme] = {
+            "id": row[0],
+            "nom": row[2],
+            "musique": row[3],
+            "lumiere": row[4],
+            "directions": json.loads(row[5]),
+            "motivations": json.loads(row[6]),
+            "nombre_max_tours": row[7],
+            "duree_phase": row[8],
+            "pas_tours": row[9],,
+            "repetitions": row[10]
+            "nbmintours": row[11]
+        }
+    return seances
+
+menu_seances = charger_seances_depuis_db()
+
+
+
+
 
 app = Flask(__name__)
+init_db()
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    seances = charger_seances_depuis_db()
     if request.method == 'POST':
         theme = request.form.get('theme')
         if theme in menu_seances:
@@ -12,8 +43,43 @@ def index():
             message = f"Séance '{menu_seances[theme]['nom']}' lancée avec succès !"
         else:
             message = "Thème invalide."
-        return render_template('index.html', menu=menu_seances, message=message)
-    return render_template('index.html', menu=menu_seances)
+
+        return render_template('index.html', seances=seances, menu=menu_seances, message=message)
+    return render_template('index.html', seances=seances, menu=menu_seances)
+
+
+
+
+
+@app.route("/edit/<int:seance_id>")
+def edit(seance_id):
+    seance = get_seance_by_id(seance_id)
+    return render_template("form.html", seance=seance)
+
+@app.route("/new")
+def new():
+    return render_template("form.html", seance=None)
+
+@app.route("/save", methods=["POST"])
+def save():
+    data = (
+        request.form["theme"],
+        request.form["nom"],
+        request.form["musique"],
+        request.form["lumiere"],
+        json.dumps(request.form.getlist("directions")),
+        json.dumps(request.form.getlist("motivations")),
+        int(request.form["nombre_max_tours"]),
+        int(request.form["duree_phase"]),
+        int(request.form["pas_tours"]),
+        int(request.form["repetitions"]),
+        int(request.form["nbmintours"])
+    )
+    seance_id = request.form.get("id")
+    save_seance(data, int(seance_id) if seance_id else None)
+    return redirect(url_for("index"))
+
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)

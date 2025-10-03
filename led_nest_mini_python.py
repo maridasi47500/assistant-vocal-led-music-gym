@@ -1,6 +1,7 @@
 import yaml
 from lumiere_controller import run_lumiere
 import multiprocessing
+import json
 
 import time
 from gtts import gTTS
@@ -10,6 +11,11 @@ import pychromecast
 import asyncio
 import websockets
 import threading
+from dbseances import get_all_seances
+
+
+
+
 
 async def envoyer_lumiere(style):
     uri = "ws://192.168.1.18:8765"  # IP du serveur WebSocket
@@ -98,44 +104,98 @@ def wait_until_media_finished(media_controller):
 
 
 # Menu des séances
-menu_seances = {
-    "zen_fluidite": {
-        "nom": "Zen et Fluidité",
-        "musique": "https://stunnel1.cyber-streaming.com:9162/stream?",
-        "lumiere": "bleu doux",
-        "directions": ["gauche"],
-        "motivations": [
-            "Respire profondément", "Laisse le mouvement te guider", "Tu es en harmonie"
-        ],
-        "nombre_max_tours": 20,
-        "duree_phase": 10,
-        "pas_tours": 2
-    },
-    "challenge_express": {
-        "nom": "Challenge Express",
-        "musique": "https://stunnel1.cyber-streaming.com:9162/stream",
-        "lumiere": "flash intense",
-        "directions": ["droite", "gauche"],
-        "motivations": [
-            "Accélère", "C’est le sprint final", "Donne tout maintenant"
-        ],
-        "nombre_max_tours": 30,
-        "duree_phase": 5,
-        "pas_tours": 5
-    },
-    "seance_duo": {
-        "nom": "Séance En Duo",
-        "musique": "https://example.com/duo_dynamique.mp3",
-        "lumiere": "double flash",
-        "directions": ["droite", "gauche"],
-        "motivations": [
-            "Fais équipe avec ton partenaire", "Synchronisez vos mouvements", "Un pour tous, tous pour un"
-        ],
-        "nombre_max_tours": 20,
-        "duree_phase": 10,
-        "pas_tours": 2
-    }
-}
+def charger_seances_depuis_db():
+    rows = get_all_seances()
+    seances = {}
+    for row in rows:
+        theme = row[1]
+        seances[theme] = {
+            "id": row[0],
+
+            "nom": row[2],
+            "musique": row[3],
+            "lumiere": row[4],
+            "directions": json.loads(row[5]),
+            "motivations": json.loads(row[6]),
+            "nombre_max_tours": row[7],
+            "duree_phase": row[8],
+            "pas_tours": row[9],
+            "repetitions": row[10],
+            "nombre_minimum_tours": row[11]
+        }
+    return seances
+
+menu_seances = charger_seances_depuis_db()
+
+#menu_seances = {
+#    "eveil_matinal": {
+#        "nom": "Éveil Matinal",
+#        "musique": "https://example.com/morning_energy.mp3",
+#        "lumiere": "jaune chaleureux",
+#        "directions": ["droite"],
+#        "motivations": [
+#            "Commence ta journée avec énergie", "Active ton corps", "Rayonne dès le matin"
+#        ],
+#        "nombre_max_tours": 15,
+#        "duree_phase": 8,
+#        "pas_tours": 3,
+#        "repetitions": 2
+#    },
+#    "serenite_nocturne": {
+#        "nom": "Sérénité Nocturne",
+#        "musique": "https://example.com/night_relaxation.mp3",
+#        "lumiere": "violet apaisant",
+#        "directions": ["gauche"],
+#        "motivations": [
+#            "Relâche toutes les tensions", "Prépare-toi au repos", "Ton calme est ta force"
+#        ],
+#        "nombre_max_tours": 10,
+#        "duree_phase": 12,
+#        "pas_tours": 2,
+#        "repetitions": 1
+#    },
+#
+#
+#    "zen_fluidite": {
+#        "nom": "Zen et Fluidité",
+#        "musique": "https://stunnel1.cyber-streaming.com:9162/stream?",
+#        "lumiere": "bleu doux",
+#        "directions": ["gauche"],
+#        "motivations": [
+#            "Respire profondément", "Laisse le mouvement te guider", "Tu es en harmonie"
+#        ],
+#        "nombre_max_tours": 20,
+#        "duree_phase": 10,
+#        "repetitions": 2,
+#        "pas_tours": 2
+#    },
+#    "challenge_express": {
+#        "nom": "Challenge Express",
+#        "musique": "https://stunnel1.cyber-streaming.com:9162/stream",
+#        "lumiere": "flash intense",
+#        "directions": ["droite", "gauche"],
+#        "motivations": [
+#            "Accélère", "C’est le sprint final", "Donne tout maintenant"
+#        ],
+#        "nombre_max_tours": 30,
+#        "duree_phase": 5,
+#        "repetitions": 3,
+#        "pas_tours": 5
+#    },
+#    "seance_duo": {
+#        "nom": "Séance En Duo",
+#        "musique": "https://example.com/duo_dynamique.mp3",
+#        "lumiere": "double flash",
+#        "directions": ["droite", "gauche"],
+#        "motivations": [
+#            "Fais équipe avec ton partenaire", "Synchronisez vos mouvements", "Un pour tous, tous pour un"
+#        ],
+#        "nombre_max_tours": 20,
+#        "duree_phase": 10,
+#        "repetitions": 2,
+#        "pas_tours": 2
+#    }
+#}
 
 
 def effet_lumiere(style):
@@ -188,44 +248,44 @@ def generer_seance_yaml(theme):
     #asyncio.run(envoyer_lumiere(params["lumiere"]))
     envoyer_lumiere_thread(params["lumiere"])
 
-
-    for tours in range(3, params["nombre_max_tours"] + 1, params["pas_tours"]):
-        envoyer_lumiere_thread("flash intense")
-
-        print("before state of radio is :  "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
-        if mcradio.status.player_state == "IDLE":
-            mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
-            mcradio.block_until_active()
-            mcradio.play()
-            wait_until_seconds(mcradio,int(params['duree_phase']))
-            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
-        elif mcradio.status.player_state == "PAUSED":
-            print("hey")
-            mcradio.play()
-            wait_until_seconds(mcradio,int(params['duree_phase']))
-            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
-        else:
-            mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
-            mcradio.block_until_active()
-            mcradio.play()
-            wait_until_seconds(mcradio,int(params['duree_phase']))
-            print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
-
-        #mcradio.pause()
-
-        for direction in params["directions"]:
-            mytext=""
-            print(f"\n➡️ {tours} tours vers {direction}")
-            mytext = generer_message_vocal(tours, direction, params['motivations'])
-# Génération du message vocal
-            tts = gTTS(mytext, lang='fr')
-            tts.save("message.mp3")
-            # Diffusion du message
-            mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
-            mc.block_until_active()
-            mc.play()
-            wait_until_media_finished(mc)
-            time.sleep(0.5)
+    for _ in range(params["repetitions"]):
+        for tours in range(params["nombre_minimum_tours"], params["nombre_max_tours"] + 1, params["pas_tours"]):
+            envoyer_lumiere_thread("flash intense")
+    
+            print("before state of radio is :  "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+            if mcradio.status.player_state == "IDLE":
+                mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
+                mcradio.block_until_active()
+                mcradio.play()
+                wait_until_seconds(mcradio,int(params['duree_phase']))
+                print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+            elif mcradio.status.player_state == "PAUSED":
+                print("hey")
+                mcradio.play()
+                wait_until_seconds(mcradio,int(params['duree_phase']))
+                print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+            else:
+                mcradio.play_media(params['musique'], 'audio/mp3', stream_type='LIVE')
+                mcradio.block_until_active()
+                mcradio.play()
+                wait_until_seconds(mcradio,int(params['duree_phase']))
+                print("after "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
+    
+            #mcradio.pause()
+    
+            for direction in params["directions"]:
+                mytext=""
+                print(f"\n➡️ {tours} tours vers {direction}")
+                mytext = generer_message_vocal(tours, direction, params['motivations'])
+    # Génération du message vocal
+                tts = gTTS(mytext, lang='fr')
+                tts.save("message.mp3")
+                # Diffusion du message
+                mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
+                mc.block_until_active()
+                mc.play()
+                wait_until_media_finished(mc)
+                time.sleep(0.5)
 
 
 
