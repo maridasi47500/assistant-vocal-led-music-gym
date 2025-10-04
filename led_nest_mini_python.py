@@ -112,11 +112,12 @@ def charger_seances_depuis_db():
         seances[theme] = {
             "id": row[0],
 
+            "theme": row[1],
             "nom": row[2],
             "musique": row[3],
             "lumiere": row[4],
-            "directions": json.loads(row[5]),
-            "motivations": json.loads(row[6]),
+            "directions": json.loads(json.loads(row[5])),
+            "motivations": json.loads(json.loads(row[6])),
             "nombre_max_tours": row[7],
             "duree_phase": row[8],
             "pas_tours": row[9],
@@ -236,6 +237,7 @@ def arreter_musique():
 # Fonction principale
 def generer_seance_yaml(theme):
     params = menu_seances[theme]
+    print(params)
    
     #dire(f"bienvenue à {params['nom']}")
     print(f"\n🎵 Lecture de la musique : {params['musique']}")

@@ -15,6 +15,7 @@ def charger_seances_depuis_db():
         theme = row[1]
         seances[theme] = {
             "id": row[0],
+            "theme": row[1],
             "nom": row[2],
             "musique": row[3],
             "lumiere": row[4],
@@ -96,21 +97,22 @@ def new():
 
 @app.route("/save", methods=["POST"])
 def save():
-    data = (
+    seance_id = request.form.get("id")
+    save_seance(
         request.form["theme"],
         request.form["nom"],
         request.form["musique"],
         request.form["lumiere"],
-        json.dumps(request.form.getlist("directions")),
-        json.dumps(request.form.getlist("motivations")),
+        json.dumps(request.form["directions"]),
+        json.dumps(request.form["motivations"]),
         int(request.form["nombre_max_tours"]),
         int(request.form["duree_phase"]),
         int(request.form["pas_tours"]),
         int(request.form["repetitions"]),
-        int(request.form["nbmintours"])
+        int(request.form["nbmintours"]),
+        seance_id=seance_id
     )
-    seance_id = request.form.get("id")
-    save_seance(data, int(seance_id) if seance_id else None)
+
     return redirect(url_for("index"))
 
 

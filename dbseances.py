@@ -61,22 +61,34 @@ def get_seance_by_id(seance_id):
     conn.close()
     return hey
 
-def save_seance(data, seance_id=None):
+def save_seance(theme, nom, musique, lumiere, directions, motivations,
+                nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours, seance_id=None):
     conn = get_connection()
     cursor = conn.cursor()
     if seance_id:
         cursor.execute("""
-        UPDATE seances SET theme=?, nom=?, musique=?, lumiere=?, directions=?, motivations=?,
-        nombre_max_tours=?, duree_phase=?, pas_tours=?, repetitions=?, nbmintours=? WHERE id=?
-        """, (*data, seance_id))
+            UPDATE seances SET theme=?, nom=?, musique=?, lumiere=?, directions=?, motivations=?,
+            nombre_max_tours=?, duree_phase=?, pas_tours=?, repetitions=?, nbmintours=? WHERE id=?
+        """, (
+            theme, nom, musique, lumiere,
+            (directions),
+            (motivations),
+            nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours, seance_id
+        ))
     else:
         cursor.execute("""
-        INSERT INTO seances (theme, nom, musique, lumiere, directions, motivations,
-        nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, data)
+            INSERT INTO seances (theme, nom, musique, lumiere, directions, motivations,
+            nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            theme, nom, musique, lumiere,
+            json.dumps(directions),
+            json.dumps(motivations),
+            nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours
+        ))
     conn.commit()
     conn.close()
+
 def ajouter_seance(theme, nom, musique, lumiere, directions, motivations, nombre_max_tours, duree_phase, pas_tours, repetitions , nbmintours=2):
     conn = get_connection()
     cursor = conn.cursor()

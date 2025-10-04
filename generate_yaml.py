@@ -9,8 +9,8 @@ def generer_yaml_depuis_formulaire(params):
     ) = params
 
     #directions = json.loads(str(directions_json))
-    directions = json.loads(directions_json[0])
-    motivations = json.loads(motivations_json[0])
+    directions = json.loads(directions_json)
+    motivations = json.loads(motivations_json)
 
     seance = {
         "metadata": {
