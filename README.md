@@ -4,4 +4,5 @@
 - python3 -m http.server 8000
 - autre : python3 app.py
 - autre : python3 lumiere_ws_controller
+python3 dbseances
 

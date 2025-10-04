@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
 from dbseances import init_db, get_all_seances, get_seance_by_id, save_seance
+from flask import send_file
+from generate_yaml import generer_yaml_depuis_formulaire
 import json
 from led_nest_mini_python import generer_seance_yaml, menu_seances  # Ton script renommé en module
 import json
+app = Flask(__name__)
+init_db()
 
 def charger_seances_depuis_db():
     rows = get_all_seances()
@@ -18,8 +22,8 @@ def charger_seances_depuis_db():
             "motivations": json.loads(row[6]),
             "nombre_max_tours": row[7],
             "duree_phase": row[8],
-            "pas_tours": row[9],,
-            "repetitions": row[10]
+            "pas_tours": row[9],
+            "repetitions": row[10],
             "nbmintours": row[11]
         }
     return seances
@@ -30,8 +34,38 @@ menu_seances = charger_seances_depuis_db()
 
 
 
-app = Flask(__name__)
-init_db()
+
+
+
+
+@app.route("/generer_yaml", methods=["POST"])
+def generer_yaml():
+    seance_id = request.form.get('theme')
+    seance = get_seance_by_id(seance_id)
+
+    if not seance:
+        return "❌ Séance introuvable", 404
+
+    # Préparer les paramètres comme tuple
+    params = (
+        seance[1],  # theme
+        seance[2],  # nom
+        seance[3],  # musique
+        seance[4],  # lumiere
+        seance[5],  # directions (JSON string)
+        seance[6],  # motivations (JSON string)
+        seance[7],  # nombre_max_tours
+        seance[8],  # duree_phase
+        seance[9],  # pas_tours
+        seance[10], # repetitions
+        seance[11]  # nbmintours
+    )
+
+    # Générer le fichier YAML
+    nom_fichier = generer_yaml_depuis_formulaire(params)
+
+    # Optionnel : proposer le téléchargement
+    return send_file(nom_fichier, as_attachment=True)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
