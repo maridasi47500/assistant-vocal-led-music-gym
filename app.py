@@ -11,6 +11,18 @@ import asyncio
 from dbseances import get_all_effets
 
 
+def nettoyer_json_embedded(data, max_depth=5):
+    """Essaie de décoder un JSON encodé plusieurs fois."""
+    for _ in range(max_depth):
+        if isinstance(data, list):
+            return data
+        try:
+            data = json.loads(data)
+        except (json.JSONDecodeError, TypeError):
+            break
+    return data if isinstance(data, list) else []
+
+
 
 
 
@@ -30,8 +42,8 @@ def charger_seances_depuis_db():
             "nom": row[2],
             "musique": row[3],
             "lumiere": row[4],
-            "directions": json.loads(row[5]),
-            "motivations": json.loads(row[6]),
+            "directions": nettoyer_json_embedded(row[5]),
+            "motivations": nettoyer_json_embedded(row[6]),
             "nombre_max_tours": row[7],
             "duree_phase": row[8],
             "pas_tours": row[9],

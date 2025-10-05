@@ -1,7 +1,26 @@
 import sqlite3
 import json
+def clean_and_parse_json(text):
+    try:
+        #cleaned = text.replace("'", '"').replace('\\\"', "'")
+        cleaned = str(json.dumps(text))
+        return (cleaned)
+    except json.JSONDecodeError:
+        return []
+
 
 DB_PATH = "seances.db"
+def nettoyer_json_embedded(data, max_depth=5):
+    """Essaie de décoder un JSON encodé plusieurs fois."""
+    for _ in range(max_depth):
+        if isinstance(data, list):
+            return data
+        try:
+            data = json.loads(data)
+        except (json.JSONDecodeError, TypeError):
+            break
+    return data if isinstance(data, list) else []
+
 
 def get_connection():
     return sqlite3.connect(DB_PATH)
@@ -28,8 +47,8 @@ def get_seance_by_id(seance_id):
              row[2],
              row[3],
              row[4],
-json.loads(row[5][1:-1]), 
-json.loads(row[6][1:-1]), 
+clean_and_parse_json(nettoyer_json_embedded(row[5])), 
+clean_and_parse_json(nettoyer_json_embedded(row[6])), 
              row[7],
              row[8],
             row[9],
@@ -150,13 +169,13 @@ def get_all_seances():
     conn.close()
     return seances
 
-def get_seance_by_id(seance_id):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM seances WHERE id = ?", (seance_id,))
-    seance = cursor.fetchone()
-    conn.close()
-    return seance
+#def get_seance_by_id(seance_id):
+#    conn = get_connection()
+#    cursor = conn.cursor()
+#    cursor.execute("SELECT * FROM seances WHERE id = ?", (seance_id,))
+#    seance = cursor.fetchone()
+#    conn.close()
+#    return seance
 
 
 def init_db():

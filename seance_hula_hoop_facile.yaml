@@ -1,0 +1,19 @@
+theme: facile
+params:
+  id: 2
+  theme: facile
+  nom: facile
+  musique: https://stunnel1.cyber-streaming.com:9162/stream?
+  lumiere: en mode a la mer
+  directions:
+  - la gauche
+  - la droite
+  motivations:
+  - bravo
+  - continue
+  - continue d'avancer
+  nombre_max_tours: 10
+  duree_phase: 10
+  pas_tours: 1
+  repetitions: 2
+  nombre_minimum_tours: 2

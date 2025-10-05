@@ -2,6 +2,8 @@ import yaml
 from lumiere_controller import run_lumiere
 import multiprocessing
 import json
+from random import randint
+
 
 import time
 from gtts import gTTS
@@ -14,6 +16,17 @@ import threading
 from dbseances import get_all_seances
 
 
+
+def nettoyer_json_embedded(data, max_depth=5):
+    """Essaie de décoder un JSON encodé plusieurs fois."""
+    for _ in range(max_depth):
+        if isinstance(data, list):
+            return data
+        try:
+            data = json.loads(data)
+        except (json.JSONDecodeError, TypeError):
+            break
+    return data if isinstance(data, list) else []
 
 
 
@@ -33,7 +46,9 @@ def generer_message_vocal(tours, direction, motivations):
         #texte += " Même si c’est plus difficile à gauche, tu peux y arriver, "
         texte += " tu peux y arriver, "
     texte += f" {random.choice(motivations)}, "
-    texte += ", ".join(str(n) for n in range(1, tours + 1)) + ","
+    speed=str(randint(100, 200)) #
+    #texte += "<prosody rate=\""+speed+"%\">"+", ".join(str(n) for n in range(1, tours + 1)) + ",</prosody>"
+    texte +=", ".join(str(n) for n in range(1, tours + 1))+","
     return texte
 
 
@@ -65,20 +80,20 @@ def wait_until_seconds(media_controller, seconds):
     while True:
         media_controller.update_status()
         state = media_controller.status.player_state
-        print("🎧 État du média :", state)
+        #print("🎧 État du média :", state)
 
         if state == "PAUSED":
-            print("⏹️ Média déjà en pause.")
+            #print("⏹️ Média déjà en pause.")
             break
 
         if state == "IDLE":
-            print("⏹️ Média arrêté prématurément.")
+            #print("⏹️ Média arrêté prématurément.")
             break
 
         if state == "PLAYING":
             x += mytime
             if x >= seconds:
-                print("⏳ Durée écoulée, mise en pause.")
+                #print("⏳ Durée écoulée, mise en pause.")
                 media_controller.pause()
                 break
 
@@ -94,7 +109,7 @@ def wait_until_media_finished(media_controller):
         # Update the media controller status
         media_controller.update_status()
         # Check if the media is idle (finished playing)
-        print("etat du media", media_controller.status.player_state)
+        #print("etat du media", media_controller.status.player_state)
         time.sleep(0.5)
         # Wait a short time before checking again
         if media_controller.status.player_state == "IDLE":
@@ -109,10 +124,6 @@ def charger_seances_depuis_db():
     seances = {}
     for row in rows:
         theme = row[1]
-        print(json.loads(row[5]))
-        print(json.loads(json.loads(row[5])))
-        print(json.loads(json.loads(json.loads(row[5]))))
-        print(json.loads(row[6]))
         try:
             seances[theme] = {
                 "id": row[0],
@@ -121,8 +132,8 @@ def charger_seances_depuis_db():
                 "nom": row[2],
                 "musique": row[3],
                 "lumiere": row[4],
-                "directions": json.loads(json.loads(json.loads(row[5]))),
-                "motivations": json.loads(json.loads(json.loads(row[6]))),
+                "directions": nettoyer_json_embedded(row[5]),
+                "motivations": nettoyer_json_embedded(row[6]),
                 "nombre_max_tours": row[7],
                 "duree_phase": row[8],
                 "pas_tours": row[9],
@@ -235,7 +246,7 @@ def effet_lumiere(style):
             led.turnOff()
 def jouer_une_musique(mc, url, media_loaded=False):
     if not media_loaded:
-        print("Chargement du média...")
+        #print("Chargement du média...")
         mc.play_media(url, 'audio/mp3', stream_type='LIVE')
         mc.block_until_active()
 

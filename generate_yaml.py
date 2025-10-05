@@ -26,6 +26,7 @@ def generer_yaml_depuis_formulaire(params):
     #directions = json.loads(json.loads(str(directions_json)))
     directions = nettoyer_json_embedded(directions_json)
     motivations = nettoyer_json_embedded(motivations_json)
+    print(directions,motivations)
 
     seance = {
         "metadata": {
