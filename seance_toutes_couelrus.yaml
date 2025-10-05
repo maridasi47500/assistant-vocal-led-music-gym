@@ -21,7 +21,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 2
@@ -36,7 +36,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 2 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 2
@@ -52,7 +52,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi tu peux y arriver
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 6
@@ -67,7 +67,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 6 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi tu peux y arriver
+    okGoogle: repete apres moi continue
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 6
@@ -83,7 +83,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 10
@@ -98,7 +98,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 10 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi continue
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 10
@@ -114,7 +114,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 14
@@ -129,7 +129,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 14 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 14
@@ -145,7 +145,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 18
@@ -160,7 +160,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 18 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi tu peux y arriver
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 18
@@ -176,7 +176,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 2
@@ -191,7 +191,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 2 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 2
@@ -207,7 +207,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 6
@@ -222,7 +222,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 6 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi tu peux y arriver
+    okGoogle: repete apres moi continue
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 6
@@ -238,7 +238,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 10
@@ -253,7 +253,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 10 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi tu peux y arriver
+    okGoogle: repete apres moi bravo
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 10
@@ -269,7 +269,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 14
@@ -284,7 +284,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 14 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi continue
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 14
@@ -300,7 +300,7 @@ automations:
       difficile a gauche, tu peux y arriver
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi essaie encore
+    okGoogle: repete apres moi continue d'avancer
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 18
@@ -315,7 +315,7 @@ automations:
     okGoogle: repete apres moi Tourne vers la droite pour 18 tours
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
-    okGoogle: repete apres moi vas-y
+    okGoogle: repete apres moi continue
     devices: Jardin de devant - Jardin de devant
   - type: assistant.command.OkGoogle
     okGoogle: compter de 1 a 18

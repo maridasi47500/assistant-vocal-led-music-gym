@@ -1,0 +1,747 @@
+metadata:
+  name: facile
+  description: "Seance 'facile' avec musique, lumi\xE8res et encouragements"
+automations:
+  starters:
+  - type: assistant.event.OkGoogle
+    eventData: query
+    is: demarrer seance facile
+  actions:
+  - type: assistant.command.Broadcast
+    message: Bienvenue dans ta seance facile
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: joue ouest fm guyane
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode en mode a la mer
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 2 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 3 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 3 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 4 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 4 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 5 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 5 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 6 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 7 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 7 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 8 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 8 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 9 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 9 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 10 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 2 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 3 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 3 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 3
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 4 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 4 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 4
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 5 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 5 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 5
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 6 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 7 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 7 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 7
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 8 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 8 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 8
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 9 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 9 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 9
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la gauche pour 10 tours tu peux y arriver
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: Tourne vers la droite pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.Broadcast
+    message: continue d'avancer
+    devices: Jardin de devant - Jardin de devant
+  - type: time.delay
+    for: 3sec
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: time.delay
+    for: 10sec
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Seance terminee bravo
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: arrete la musique
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: eteins la lampe
+    devices: Jardin de devant - Jardin de devant

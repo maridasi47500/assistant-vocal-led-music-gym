@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from dbseances import init_db, get_all_seances, get_seance_by_id, save_seance
 from flask import send_file
-from generate_yaml import generer_yaml_depuis_formulaire
+from hey_generate_yaml import generer_yaml_depuis_formulaire
 import json
 from led_nest_mini_python import generer_seance_yaml, menu_seances  # Ton script renommé en module
 import json
