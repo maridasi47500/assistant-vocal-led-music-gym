@@ -1,4 +1,5 @@
 import asyncio
+import json
 import websockets
 import flux_led
 import sqlite3
@@ -16,7 +17,7 @@ def get_etapes_from_db(style_name):
         return []
     effet_id = row[0]
     cursor.execute("""
-        SELECT action, r, g, b, brightness, pause
+        SELECT type, valeur
         FROM effet_etapes
         WHERE effet_id = ?
         ORDER BY id ASC
@@ -27,15 +28,27 @@ def get_etapes_from_db(style_name):
 
 async def effet_lumiere(style):
     etapes = get_etapes_from_db(style)
-    for action, r, g, b, brightness, pause in etapes:
-        if action == "turn_on":
-            led.turnOn()
-            if r is not None and g is not None and b is not None:
-                led.setRgb(r, g, b, brightness=brightness or 100)
-        elif action == "turn_off":
-            led.turnOff()
-        if pause:
-            await asyncio.sleep(pause)
+    for type, valeur in etapes:
+        if type == "action":
+            print(json.loads(valeur))
+            print("=")
+            print("turn_on")
+            print(json.loads(valeur) == "turn_on")
+            if json.loads(valeur) == "turn_on":
+                led.turnOn()
+
+            elif json.loads(valeur) == "turn_off":
+                led.turnOff()
+        elif type == "color":
+            r=json.loads(valeur)["r"]
+            g=json.loads(valeur)["g"]
+            b=json.loads(valeur)["b"]
+            led.setRgb(r, g, b, brightness=100)
+        elif type == "pause":
+            try:
+                await asyncio.sleep(int(json.loads(valeur)))
+            except:
+                await asyncio.sleep(float(json.loads(valeur)))
 
 
 async def handler(websocket):

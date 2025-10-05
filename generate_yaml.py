@@ -8,9 +8,13 @@ def generer_yaml_depuis_formulaire(params):
         nombre_max_tours, duree_phase, pas_tours, repetitions, nbmintours
     ) = params
 
-    #directions = json.loads(str(directions_json))
-    directions = json.loads(directions_json)
-    motivations = json.loads(motivations_json)
+    #directions = json.loads(json.loads(str(directions_json)))
+    try:
+        directions = json.loads(json.loads(directions_json))
+        motivations = json.loads(json.loads(motivations_json))
+    except:
+        directions = json.loads(directions_json)
+        motivations =json.loads(motivations_json)
 
     seance = {
         "metadata": {

@@ -14,6 +14,8 @@
   <h1>💡 Construire une séquence lumineuse</h1>
 
   <form method="post" action="/effet">
+<label>name for effets:</label>
+    <input type="text" name="name" id="name_effets_json">
     <button type="button" onclick="ajouterTexte()">➕ Ajouter un nom de mode</button>
     <button type="button" onclick="ajouterCouleur()">🎨 Ajouter une couleur</button>
     <button type="button" onclick="ajouterAllumer()">💡 Allumer la lumière</button>
@@ -29,19 +31,14 @@
   <div id="effetlumieres"></div>
 
   <script>
-    let compteur = 0;
 
+let compteur = 0;
     function ajouterTexte() {
       const div = document.createElement("div");
       div.innerHTML = `<label>Mode :</label> <input type="text" name="mode" data-type="mode" data-id="${++compteur}">`;
       document.getElementById("effetlumieres").appendChild(div);
     }
 
-    function ajouterCouleur() {
-      const div = document.createElement("div");
-      div.innerHTML = `<label>Couleur :</label> <input type="color" name="couleur" data-type="color" data-id="${++compteur}">`;
-      document.getElementById("effetlumieres").appendChild(div);
-    }
 
     function ajouterAllumer() {
       const div = document.createElement("div");
@@ -61,7 +58,7 @@
       document.getElementById("effetlumieres").appendChild(div);
     }
 
-  let compteur = 0;
+
 
   function ajouterCouleur() {
     const div = document.createElement("div");

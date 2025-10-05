@@ -1,0 +1,3927 @@
+metadata:
+  name: toutes les couleurs
+  description: "S\xE9ance 'toutes_couelrus' avec musique, lumi\xE8res et encouragements"
+automations:
+  starters:
+  - type: assistant.event.OkGoogle
+    eventData: query
+    is: demarrer seance toutes_couelrus
+  actions:
+  - type: assistant.command.OkGoogle
+    okGoogle: "repete apres moi Bienvenue dans ta s\xE9ance toutes les couleurs"
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: joue la musique https://stunnel1.cyber-streaming.com:9162/stream?
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode multicolore
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi o
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi p
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ]
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi o
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi [
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi [
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi o
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi n
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi n
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ]
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi p
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi i
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 2 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 2
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ]
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi -
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi [
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi n
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ]
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 6 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 6
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi c
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi p
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 10 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 10
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi t
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi a
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi n
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 14 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi v
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 14
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers [ pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi [
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi "
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers g pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi s
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers u pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi p
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers c pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ]
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers h pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers , pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi p
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi u
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers l pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi y
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers a pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers   pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers d pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi x
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers r pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi n
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers o pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers i pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: 'repete apres moi  '
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers t pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers e pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi ,
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers " pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi e
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi Tourne vers ] pour 18 tours
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: repete apres moi r
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: compter de 1 a 18
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: attendre 10 secondes
+    devices: Jardin de devant - Jardin de devant
+  - type: device.command.ActivateScene
+    activate: 'true'
+    devices: en mode flash
+  - type: assistant.command.OkGoogle
+    okGoogle: "repete apres moi S\xE9ance termin\xE9e bravo"
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: arrete la musique
+    devices: Jardin de devant - Jardin de devant
+  - type: assistant.command.OkGoogle
+    okGoogle: eteins la lampe
+    devices: Jardin de devant - Jardin de devant
