@@ -1,6 +1,21 @@
 import yaml
 import json
 import random
+import json
+import random
+
+def nettoyer_json_embedded(data, max_depth=5):
+    """Essaie de décoder un JSON encodé plusieurs fois."""
+    for _ in range(max_depth):
+        if isinstance(data, list):
+            return data
+        try:
+            data = json.loads(data)
+        except (json.JSONDecodeError, TypeError):
+            break
+    return data if isinstance(data, list) else []
+
+
 
 def generer_yaml_depuis_formulaire(params):
     (
@@ -9,12 +24,8 @@ def generer_yaml_depuis_formulaire(params):
     ) = params
 
     #directions = json.loads(json.loads(str(directions_json)))
-    try:
-        directions = json.loads(json.loads(directions_json))
-        motivations = json.loads(json.loads(motivations_json))
-    except:
-        directions = json.loads(directions_json)
-        motivations =json.loads(motivations_json)
+    directions = nettoyer_json_embedded(directions_json)
+    motivations = nettoyer_json_embedded(motivations_json)
 
     seance = {
         "metadata": {
