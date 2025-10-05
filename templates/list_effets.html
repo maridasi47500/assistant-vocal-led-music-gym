@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Liste des effets lumineux</title></head>
+<body>
+  <h1>📋 Effets lumineux enregistrés</h1>
+  <ul>
+    {% for effet in effets %}
+      <li>ID {{ effet[0] }} : {{ effet[1] }}</li>
+    {% else %}
+      <li>Aucun effet enregistré.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
+

@@ -5,7 +5,18 @@ from generate_yaml import generer_yaml_depuis_formulaire
 import json
 from led_nest_mini_python import generer_seance_yaml, menu_seances  # Ton script renommé en module
 import json
+from dbseances import create_effet, create_type_effet  # Assure-toi que ces fonctions existent
+from dbseances import get_effet_by_id, get_etapes_effet
+import asyncio
+from dbseances import get_all_effets
+
+
+
+
+
+
 app = Flask(__name__)
+
 init_db()
 
 def charger_seances_depuis_db():
@@ -31,9 +42,41 @@ def charger_seances_depuis_db():
 
 menu_seances = charger_seances_depuis_db()
 
+@app.route("/effet/<int:id>")
+def voir_effet(id):
+    effet = get_effet_by_id(id)
+    etapes = get_etapes_effet(id)
+    return render_template("voir_effet.html", effet=effet, etapes=etapes)
 
 
 
+@app.route("/effets")
+def liste_effets():
+    effets = get_all_effets()
+    return render_template("liste_effets.html", effets=effets)
+
+
+@app.route("/formlamp", methods=["GET"])
+def form_lamp():
+    return render_template("formlamp.html")
+
+
+@app.route("/effet", methods=["POST"])
+def effet():
+    name = request.form["name"]
+    effets = json.loads(request.form["effets_json"])
+
+    # Créer l'effet principal
+    effet_id = create_effet(name)
+
+    # Enregistrer chaque étape de l'effet
+    for effet in effets:
+        mytype = effet["type"]
+        myvalue = effet["value"]
+        create_type_effet(effet_id, mytype, myvalue)
+        print(f"{mytype} → {myvalue}")
+
+    return "✅ Effets lumineux enregistrés avec succès !"
 
 
 
@@ -73,14 +116,14 @@ def index():
     seances = charger_seances_depuis_db()
     if request.method == 'POST':
         theme = request.form.get('theme')
-        if theme in menu_seances:
+        if theme in seances:
             generer_seance_yaml(theme)
-            message = f"Séance '{menu_seances[theme]['nom']}' lancée avec succès !"
+            message = f"Séance '{seances[theme]['nom']}' lancée avec succès !"
         else:
             message = "Thème invalide."
 
-        return render_template('index.html', seances=seances, menu=menu_seances, message=message)
-    return render_template('index.html', seances=seances, menu=menu_seances)
+        return render_template('index.html', seances=seances, menu=seances, message=message)
+    return render_template('index.html', seances=seances, menu=seances)
 
 
 

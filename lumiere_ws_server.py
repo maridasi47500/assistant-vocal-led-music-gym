@@ -1,26 +1,42 @@
 import asyncio
 import websockets
 import flux_led
+import sqlite3
 
 led = flux_led.WifiLedBulb("192.168.1.12")
 
+
+
+def get_etapes_from_db(style_name):
+    conn = sqlite3.connect("seances.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT id FROM effets_lumineux WHERE nom = ?", (style_name,))
+    row = cursor.fetchone()
+    if not row:
+        return []
+    effet_id = row[0]
+    cursor.execute("""
+        SELECT action, r, g, b, brightness, pause
+        FROM effet_etapes
+        WHERE effet_id = ?
+        ORDER BY id ASC
+    """, (effet_id,))
+    etapes = cursor.fetchall()
+    conn.close()
+    return etapes
+
 async def effet_lumiere(style):
-    if style == "bleu doux":
-        led.setRgb(0, 0, 255)
-    elif style == "flash intense":
-        for _ in range(5):
+    etapes = get_etapes_from_db(style)
+    for action, r, g, b, brightness, pause in etapes:
+        if action == "turn_on":
             led.turnOn()
-            led.setRgb(255, 255, 255, brightness=100)
-            await asyncio.sleep(0.2)
+            if r is not None and g is not None and b is not None:
+                led.setRgb(r, g, b, brightness=brightness or 100)
+        elif action == "turn_off":
             led.turnOff()
-            await asyncio.sleep(0.2)
-    elif style == "double flash":
-        for _ in range(2):
-            led.turnOn()
-            led.setRgb(255, 255, 0)
-            await asyncio.sleep(0.3)
-            led.turnOff()
-            await asyncio.sleep(0.3)
+        if pause:
+            await asyncio.sleep(pause)
+
 
 async def handler(websocket):
     async for message in websocket:

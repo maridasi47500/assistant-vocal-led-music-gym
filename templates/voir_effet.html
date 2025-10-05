@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Détails de l'effet</title></head>
+<body>
+  <h1>✨ Effet : {{ effet[1] }}</h1>
+  <ul>
+    {% for etape in etapes %}
+      <li><strong>{{ etape[0] }}</strong> → {{ etape[1] }}</li>
+    {% endfor %}
+  </ul>
+
+  <form method="post" action="{{ url_for('rejouer_effet', id=effet[0]) }}">
+    <button type="submit">🔁 Rejouer cet effet</button>
+  </form>
+</body>
+</html>
+
