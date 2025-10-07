@@ -9,13 +9,21 @@
 <a href="/effets">voir tous les effet de lampes</a>
     <h1>🎯 Lance ta séance Hula Hoop</h1>
     <form method="post">
+<div class="field">
         <label for="theme">Choisis ton thème :</label>
         <select name="theme" id="theme">
             {% for key, val in menu.items() %}
                 <option value="{{ key }}">{{ val.nom }}</option>
             {% endfor %}
         </select>
+</div>
+<div class="field">
+        <label for="randomlist">liste au hasard?</label>
+        <input type="checkbox" value="1" name="randomlist" id="randomlist"/>
+</div>
+<div class="actions">
         <button type="submit">Lancer</button>
+</div>
     </form>
     <form method="post" action="/generer_yaml">
         <label for="theme">Choisis ton thème :</label>
@@ -40,6 +48,7 @@
     </li>
   {% endfor %}
 </ul>
+
 
 </body>
 </html>

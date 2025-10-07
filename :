@@ -1,156 +1,205 @@
-import yaml
-from gtts import gTTS
-import random
-import flux_led
-import pychromecast
+from flask import Flask, render_template, request, redirect, url_for
+from dbseances import init_db, get_all_seances, get_seance_by_id, save_seance
+from flask import send_file
+from hey_generate_yaml import generer_yaml_depuis_formulaire
+import json
+from led_nest_mini_python import generer_seance_yaml, menu_seances  # Ton script renommé en module
+import json
+from dbseances import create_effet, create_type_effet  # Assure-toi que ces fonctions existent
+from dbseances import get_effet_by_id, get_etapes_effet
+import asyncio
+from dbseances import get_all_effets
+import asyncio
+import websockets
+import threading
 
-# Initialisation Chromecast
-chromecasts, browser = pychromecast.get_chromecasts()
-cast = next((cc for cc in chromecasts if cc.name == "Jardin de devant"), None)
-if cast is None:
-    print("❌ Aucun Chromecast nommé 'Jardin de devant' trouvé.")
-    exit(1)
+async def envoyer_lumiere(style):
+    uri = "ws://192.168.1.18:8765"  # IP du serveur WebSocket
+    async with websockets.connect(uri) as websocket:
+        await websocket.send(style)
 
-cast.wait()
-mc = cast.media_controller
 
-# Initialisation LED
-led = flux_led.WifiLedBulb("192.168.1.12")  # IP de l’ampoule LED
-
-# Menu des séances
-menu_seances = {
-    "zen_fluidite": {
-        "nom": "Zen et Fluidité",
-        "musique": "https://stunnel1.cyber-streaming.com:9162/stream",
-        "lumiere": "bleu doux",
-        "directions": ["gauche"],
-        "motivations": [
-            "Respire profondément", "Laisse le mouvement te guider", "Tu es en harmonie"
-        ],
-        "nombre_max_tours": 20,
-        "duree_phase": 10,
-        "pas_tours": 2
-    },
-    "challenge_express": {
-        "nom": "Challenge Express",
-        "musique": "https://example.com/cardio_boost.mp3",
-        "lumiere": "flash intense",
-        "directions": ["droite", "gauche"],
-        "motivations": [
-            "Accélère", "C’est le sprint final", "Donne tout maintenant"
-        ],
-        "nombre_max_tours": 30,
-        "duree_phase": 5,
-        "pas_tours": 5
-    },
-    "seance_duo": {
-        "nom": "Séance En Duo",
-        "musique": "https://example.com/duo_dynamique.mp3",
-        "lumiere": "double flash",
-        "directions": ["droite", "gauche"],
-        "motivations": [
-            "Fais équipe avec ton partenaire", "Synchronisez vos mouvements", "Un pour tous, tous pour un"
-        ],
-        "nombre_max_tours": 20,
-        "duree_phase": 10,
-        "pas_tours": 2
-    }
-}
-
-def effet_lumiere(style):
-    if style == "bleu doux":
-        led.setRgb(0, 0, 255)
-    elif style == "flash intense":
-        for _ in range(5):
-            led.turnOn()
-            led.setRgb(255, 255, 255,brightness=100)
-            led.turnOff()
-    elif style == "double flash":
-        for _ in range(2):
-            led.turnOn()
-            led.setRgb(255, 255, 0)
-            led.turnOff()
-
-def jouer_musique(url):
-    mc.play_media(url, 'audio/mp3')
-    mc.block_until_active()
-    mc.play()
-
-def arreter_musique():
-    mc.stop()
-
-# Fonction principale
-def generer_seance_yaml(theme):
-    params = menu_seances[theme]
-
-    print(f"\n🎵 Lecture de la musique : {params['musique']}")
-    jouer_musique(params["musique"])
-
-    print(f"💡 Effet lumière : {params['lumiere']}")
-    effet_lumiere(params["lumiere"])
-
-    for tours in range(3, params["nombre_max_tours"] + 1, params["pas_tours"]):
-        jouer_musique(params["musique"])
-        for direction in params["directions"]:
-            mytext=""
-            print(f"\n➡️ {tours} tours vers {direction}")
-            mytext+=(f"\n {tours} tours vers {direction}, ")
-            if "gauche" in direction:
-                print("💬 Même si c’est plus difficile à gauche, tu peux y arriver")
-                mytext+=(" Même si c’est plus difficile à gauche, tu peux y arriver, ")
-            print(f"💬 Motivation : {random.choice(params['motivations'])}")
-            mytext+=(f" Motivation : {random.choice(params['motivations'])}, ")
-            # Créer la liste de nombres de 1 à 10
-            nombres = list(range(1, (tours + 1)))
-            
-            # Convertir chaque nombre en chaîne de caractères et les joindre avec des virgules
-            resultat = ", ".join(str(n) for n in nombres)
-            
-            print(resultat)
-            mytext+=resultat
-
-            print(f" Attente de {params['duree_phase']} secondes")
-            mytext+=(f", Attente de {params['duree_phase']} secondes,")
-# Génération du message vocal
-            tts = gTTS(mytext, lang='fr')
-            tts.save("message.mp3")
-            
-            # Diffusion du message
-            mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
-            mc.block_until_active()
-            mc.play()
+def envoyer_lumiere_thread(style):
+    def run():
+        asyncio.run(envoyer_lumiere(style))
+    threading.Thread(target=run).start()
 
 
 
-            effet_lumiere("flash intense")
+def nettoyer_json_embedded(data, max_depth=5):
+    """Essaie de décoder un JSON encodé plusieurs fois."""
+    for _ in range(max_depth):
+        if isinstance(data, list):
+            return data
+        try:
+            data = json.loads(data)
+        except (json.JSONDecodeError, TypeError):
+            break
+    return data if isinstance(data, list) else []
 
-    msgfin=("\n🏁 Séance terminée ! Bravo 👏")
-    print(msgfin)
-    tts = gTTS(msgfin, lang='fr')
-    tts.save("message.mp3")
-    
-    # Diffusion du message
-    mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
-    mc.block_until_active()
-    mc.play()
-    arreter_musique()
-    led.turnOff()
 
-    # YAML export
-    nom_fichier = f"seance_hula_hoop_{theme}.yaml"
-    with open(nom_fichier, "w", encoding="utf-8") as fichier:
-        yaml.dump({"theme": theme, "params": params}, fichier, sort_keys=False)
-    print(f"✅ Fichier YAML '{nom_fichier}' créé avec succès")
 
-# Exemple d'utilisation
+
+
+
+app = Flask(__name__)
+
+init_db()
+
+def charger_seances_depuis_db():
+    rows = get_all_seances()
+    seances = {}
+    for row in rows:
+        theme = row[1]
+        seances[theme] = {
+            "id": row[0],
+            "theme": row[1],
+            "nom": row[2],
+            "musique": row[3],
+            "lumiere": row[4],
+            "directions": nettoyer_json_embedded(row[5]),
+            "motivations": nettoyer_json_embedded(row[6]),
+            "nombre_max_tours": row[7],
+            "duree_phase": row[8],
+            "pas_tours": row[9],
+            "repetitions": row[10],
+            "nbmintours": row[11]
+        }
+    return seances
+
+menu_seances = charger_seances_depuis_db()
+
+@app.route("/effet/<int:id>")
+def voir_effet(id):
+    effet = get_effet_by_id(id)
+    etapes = get_etapes_effet(id)
+    return render_template("voir_effet.html", effet=effet, etapes=etapes)
+
+
+
+@app.route("/effet/<int:id>")
+def rejouer_effet(id):
+    effet = get_effet_by_id(effet)
+    etapes = get_etapes_effet(id)
+    envoyer_lumiere_thread(effet["nom"])
+    return render_template("voir_effet.html", effet=effet, etapes=etapes)
+@app.route("/effets")
+def liste_effets():
+    effets = get_all_effets()
+    message=""
+    if request.method == 'POST':
+        effet = request.form.get('effet')
+        effet = get_effet_by_id(effet)
+        envoyer_lumiere_thread(effet["nom"])
+        message="effet '"+effet["nom"]+"' lancé avec succes"
+    return render_template("liste_effets.html", effets=effets, message=message)
+
+
+@app.route("/formlamp", methods=["GET"])
+def form_lamp():
+    return render_template("formlamp.html")
+
+
+@app.route("/effet", methods=["POST"])
+def effet():
+    name = request.form["name"]
+    effets = json.loads(request.form["effets_json"])
+
+    # Créer l'effet principal
+    effet_id = create_effet(name)
+
+    # Enregistrer chaque étape de l'effet
+    for effet in effets:
+        mytype = effet["type"]
+        myvalue = effet["value"]
+        create_type_effet(effet_id, mytype, myvalue)
+        print(f"{mytype} → {myvalue}")
+
+    return "✅ Effets lumineux enregistrés avec succès !"
+
+
+
+
+
+@app.route("/generer_yaml", methods=["POST"])
+def generer_yaml():
+    seance_id = request.form.get('theme')
+    seance = get_seance_by_id(seance_id)
+
+    if not seance:
+        return "❌ Séance introuvable", 404
+
+    # Préparer les paramètres comme tuple
+    params = (
+        seance[1],  # theme
+        seance[2],  # nom
+        seance[3],  # musique
+        seance[4],  # lumiere
+        seance[5],  # directions (JSON string)
+        seance[6],  # motivations (JSON string)
+        seance[7],  # nombre_max_tours
+        seance[8],  # duree_phase
+        seance[9],  # pas_tours
+        seance[10], # repetitions
+        seance[11]  # nbmintours
+    )
+
+    # Générer le fichier YAML
+    nom_fichier = generer_yaml_depuis_formulaire(params)
+
+    # Optionnel : proposer le téléchargement
+    return send_file(nom_fichier, as_attachment=True)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    seances = charger_seances_depuis_db()
+    if request.method == 'POST':
+        randomlist = request.form.get('randomlist')
+        theme = request.form.get('theme')
+        if theme in seances:
+            generer_seance_yaml(theme, randomlist=randomlist)
+            message = f"Séance '{seances[theme]['nom']}' lancée avec succès !"
+        else:
+            message = "Thème invalide."
+
+        return render_template('index.html', seances=seances, menu=seances, message=message)
+    return render_template('index.html', seances=seances, menu=seances)
+
+
+
+
+
+@app.route("/edit/<int:seance_id>")
+def edit(seance_id):
+    seance = get_seance_by_id(seance_id)
+    return render_template("form.html", seance=seance)
+
+@app.route("/new")
+def new():
+    return render_template("form.html", seance=None)
+
+@app.route("/save", methods=["POST"])
+def save():
+    seance_id = request.form.get("id")
+    save_seance(
+        request.form["theme"],
+        request.form["nom"],
+        request.form["musique"],
+        request.form["lumiere"],
+        json.dumps(request.form["directions"]),
+        json.dumps(request.form["motivations"]),
+        int(request.form["nombre_max_tours"]),
+        int(request.form["duree_phase"]),
+        int(request.form["pas_tours"]),
+        int(request.form["repetitions"]),
+        int(request.form["nbmintours"]),
+        seance_id=seance_id
+    )
+
+    return redirect(url_for("index"))
+
+
+
 if __name__ == "__main__":
-    print("Choisis ton theme :")
-    for key, val in menu_seances.items():
-        print(f"- {key} : {val['nom']}")
-    
-    choix = input("Tape le nom du theme (ex: zen_fluidite) : ").strip()
-    if choix in menu_seances:
-        generer_seance_yaml(choix)
-    else:
-        print("❌ Theme invalide. Relance le script et choisis parmi les options.")
+    app.run(host='0.0.0.0', port=5000, debug=True)
 

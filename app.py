@@ -9,6 +9,21 @@ from dbseances import create_effet, create_type_effet  # Assure-toi que ces fonc
 from dbseances import get_effet_by_id, get_etapes_effet
 import asyncio
 from dbseances import get_all_effets
+import asyncio
+import websockets
+import threading
+
+async def envoyer_lumiere(style):
+    uri = "ws://192.168.1.18:8765"  # IP du serveur WebSocket
+    async with websockets.connect(uri) as websocket:
+        await websocket.send(style)
+
+
+def envoyer_lumiere_thread(style):
+    def run():
+        asyncio.run(envoyer_lumiere(style))
+    threading.Thread(target=run).start()
+
 
 
 def nettoyer_json_embedded(data, max_depth=5):
@@ -58,14 +73,27 @@ menu_seances = charger_seances_depuis_db()
 def voir_effet(id):
     effet = get_effet_by_id(id)
     etapes = get_etapes_effet(id)
-    return render_template("voir_effet.html", effet=effet, etapes=etapes)
+    return render_template("voir_effet.html", effet=effet, etapes=etapes, message=None)
 
 
 
-@app.route("/effets")
+@app.route("/effet/<int:id>", methods=["POST"])
+def rejouer_effet(id):
+    effet = get_effet_by_id(id)
+    etapes = get_etapes_effet(id)
+    envoyer_lumiere_thread(effet[1])
+    message="effet est en train d'être rejoué"
+    return render_template("voir_effet.html", effet=effet, etapes=etapes, message=message)
+@app.route("/effets", methods=["GET","POST"])
 def liste_effets():
     effets = get_all_effets()
-    return render_template("liste_effets.html", effets=effets)
+    message=""
+    if request.method == 'POST':
+        effet = request.form.get('effet')
+        effet = get_effet_by_id(effet)
+        envoyer_lumiere_thread(effet[1])
+        message="effet '"+effet[1]+"' lancé avec succes"
+    return render_template("liste_effets.html", effets=effets, message=message)
 
 
 @app.route("/formlamp", methods=["GET"])
@@ -127,9 +155,10 @@ def generer_yaml():
 def index():
     seances = charger_seances_depuis_db()
     if request.method == 'POST':
+        randomlist = request.form.get('randomlist')
         theme = request.form.get('theme')
         if theme in seances:
-            generer_seance_yaml(theme)
+            generer_seance_yaml(theme, randomlist=randomlist)
             message = f"Séance '{seances[theme]['nom']}' lancée avec succès !"
         else:
             message = "Thème invalide."

@@ -267,7 +267,7 @@ def arreter_musique():
     mc.stop()
 
 # Fonction principale
-def generer_seance_yaml(theme):
+def generer_seance_yaml(theme,randomlist="0"):
     menu_seances = charger_seances_depuis_db()
     params = menu_seances[theme]
     print(params)
@@ -284,7 +284,10 @@ def generer_seance_yaml(theme):
     envoyer_lumiere_thread(params["lumiere"])
 
     for _ in range(params["repetitions"]):
-        for tours in range(params["nombre_minimum_tours"], params["nombre_max_tours"] + 1, params["pas_tours"]):
+        y=list(range(params["nombre_minimum_tours"], params["nombre_max_tours"] + 1, params["pas_tours"]))
+        if randomlist == "1":
+            random.shuffle(y)
+        for tours in y:
             envoyer_lumiere_thread("flash intense")
     
             print("before state of radio is :  "+str(params['duree_phase'])+" seconds statut mcradio:", mcradio.status.player_state)
@@ -308,7 +311,10 @@ def generer_seance_yaml(theme):
     
             #mcradio.pause()
     
-            for direction in params["directions"]:
+            d=list(params["directions"])
+            if randomlist == "1":
+                random.shuffle(d)
+            for direction in d:
                 mytext=""
                 print(f"\n➡️ {tours} tours vers {direction}")
                 mytext = generer_message_vocal(tours, direction, params['motivations'])
