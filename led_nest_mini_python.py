@@ -334,7 +334,7 @@ def generer_seance_yaml(theme,randomlist="0"):
 
 
 
-    msgfin=("\n🏁 Séance terminée ! Bravo 👏")
+    msgfin=("Séance terminée ! Bravo")
     print(msgfin)
     tts = gTTS(msgfin, lang='fr')
     tts.save("message.mp3")
@@ -343,6 +343,8 @@ def generer_seance_yaml(theme,randomlist="0"):
     mc.play_media("http://192.168.1.18:8000/message.mp3", "audio/mp3")  # Remplace par l’URL accessible depuis ton réseau
     mc.block_until_active()
     mc.play()
+    wait_until_media_finished(mc)
+    time.sleep(0.1)
 
     arreter_musique()
     led.turnOff()
