@@ -1,12 +1,34 @@
-hey="python3 -m venv ~/path/to/venv"
-wow=". ~/path/to/venv/bin/activate"
-yesA="python3 -m http.server 8000"
-#2
-yesB="python3 app.py"
-#3
-yesC="python3 lumiere_ws_server.py"
-#gnome-terminal -x bash -c -- "$hey; $wow;$yesA"
-#gnome-terminal -x bash -c -- "$hey; $wow;cd ~/hulahoop;$yesB"
-#gnome-terminal -x bash -c -- "$hey; $wow;cd ~/hulahoop;$yesC"
-gnome-terminal --tab --title="tab 1" --command="bash -c 'cd ~/hulahoop;$hey; $wow;cd ~/hulahoop;$yesC'" --tab --title="tab 2" --command="bash -c '$hey; $wow;cd ~/hulahoop;$yesB'" --tab --title="tab 3" --command="bash -c '$hey; $wow;cd ~/hulahoop;$yesC'"
+<!DOCTYPE html>
+<html>
+<head><title>Détails de l'effet</title></head>
+<body>
+  <h1>✨ Effet : {{ effet[1] }}</h1>
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+
+  <ul>
+    {% for etape in etapes %}
+      <li><strong>{{ etape[0] }}</strong> → {{ etape[1] }}
+{% if etape[0] == "color" %}
+    {% set rgb_values = etape[1].values() %}
+    {% set rgb_string = " " %}
+    {% for x in rgb_values %}
+        {% set rgb_string = rgb_string + " " + str(x) %}
+    {% endfor %}
+    <div style="height: 50px; width: 100px; background: rgb({{ rgb_string }});">
+    </div>
+{% endif %}
+
+</li>
+    {% endfor %}
+  </ul>
+
+  <form method="post" action="{{ url_for('rejouer_effet', id=effet[0]) }}">
+    <button type="submit">🔁 Rejouer cet effet</button>
+  </form>
+<a href="/effets">retour</a>
+
+</body>
+</html>
 
